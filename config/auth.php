@@ -34,7 +34,13 @@ return [
     | Supported: "session"
     |
     */
-
+    // 'guards' => [
+    //     'api' => [
+    //         'driver' => 'passport',
+    //         'provider' => 'user',
+    //     ],
+    // ],
+    
     'guards' => [
         'web' => [
             'driver' => 'session',
