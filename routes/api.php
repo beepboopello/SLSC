@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostCommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/praisePost/{uid}/{pid}', [PostController::class,'praisePost'])->name('praisePost');
 Route::post('/rejectPost/{uid}/{pid}', [PostController::class,'rejectPost'])->name('rejectPost');
+Route::post('/comment', [PostCommentController::class,'createComment'])->name('comment');
+
+// Route::group(['middleware' => ['auth:api']], function() {
+
+// });
