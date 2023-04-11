@@ -1,2 +1,2 @@
-# SLSC
- School Project - Souls-like Social Media
+# Social media
+ School Project inspired by souls-like games
